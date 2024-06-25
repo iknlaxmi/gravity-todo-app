@@ -37,6 +37,7 @@ const AddTodo = ({ task, setTask, setUpdateData }) => {
       }
     };
     postTodoData();
+    setTask("");
   };
   return (
     <div>
@@ -45,6 +46,7 @@ const AddTodo = ({ task, setTask, setUpdateData }) => {
           placeholder="add task"
           className="border-2 rounded-xl w-[35%] h-14 ml-[30rem] mt-10 p-2"
           onChange={handleChange}
+          value={task}
         />
         <button
           className="m-8 rounded-xl bg-blue-600 w-28 h-14 text-white"
